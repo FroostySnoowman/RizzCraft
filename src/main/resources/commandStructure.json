@@ -1,0 +1,19 @@
+{
+  "rc": {
+    "help": "Displays RizzCraft commands",
+
+    "whois":{
+        "help": "Gets more information about a given player.",
+        "args": ["{player}"]
+    },
+
+    "ping": {
+        "help": "Pings the server for a response"
+    },
+
+    "warn": {
+        "help": "Warns a player with text on in the center of their screen",
+        "args": ["{player}", "reason:string"]
+    }
+  }
+}

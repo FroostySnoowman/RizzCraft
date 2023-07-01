@@ -1,0 +1,45 @@
+# Database connection settings
+Database_MySQL:
+  Hostname: ""
+  Port: ""
+  Database: ""
+  Username: ""
+  Password: ""
+
+# Sets the admins of the server
+Admins:
+  - ""
+
+# Blocks commands
+BlockedCommands:
+  - "help"
+  - "bukkit:help"
+  - "ehelp"
+  - "essentials:ehelp"
+  - "?"
+  - "bukkit:?"
+  - "version"
+  - "bukkit:version"
+  - "ver"
+  - "bukkit:ver"
+  - "about"
+  - "bukkit:about"
+  - "icanhasbukkit"
+  - "plugins"
+  - "bukkit:plugins"
+  - "pl"
+  - "bukkit:pl"
+
+# What blocks we should monitor and keep track of when mined
+OreAlert:
+  Blocks: [
+    EMERALD_ORE,
+    DEEPSLATE_EMERALD_ORE,
+    GOLD_ORE,
+    DEEPSLATE_GOLD_ORE,
+    DIAMOND_ORE,
+    DEEPSLATE_DIAMOND_ORE,
+    ANCIENT_DEBRIS,
+    NETHER_GOLD_ORE,
+    NETHER_QUARTZ_ORE,
+  ]

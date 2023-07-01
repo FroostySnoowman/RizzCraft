@@ -1,0 +1,21 @@
+name: RizzCraft
+version: '${project.version}'
+main: rizzcraft.net.rizzcraft.Main
+api-version: 1.19
+authors: [ Someone, FroostySnoowman ]
+description: RizzCraft's official core plugin.
+website: rizzcraft.net
+commands:
+  rc:
+    description: The main RizzCraft command
+    aliases: RizzCraft
+    usage: /<command> [ping|whois|slap|yeet]
+  shop:
+    description: To allow players to create shops
+    usage: /<command> [create|delete|edit|transfer|search]
+  item:
+    description: To check what item a player is holding
+    usage: /<command>
+  spawn:
+    description: Teleports you to spawn
+    usage: /<command>

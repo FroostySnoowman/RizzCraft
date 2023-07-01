@@ -1,0 +1,155 @@
+# A full list of causes
+# BLOCK_EXPLOSION
+# CONTACT
+# CRAMMING
+# CUSTOM
+# DRAGON_BREATH
+# DROWNING
+# DRYOUT
+# ENTITY_ATTACK
+# ENTITY_EXPLOSION
+# ENTITY_SWEEP_ATTACK
+# FALL
+# FALLING_BLOCK
+# FIRE
+# FIRE_TICK
+# FLY_INTO_WALL
+# HOT_FLOOR
+# LAVA
+# LIGHTNING
+# MAGIC
+# MELTING
+# POISON
+# PROJECTILE
+# STARVATION
+# SUFFOCATION
+# SUICIDE
+# THORNS
+# VOID
+# WITHER
+
+FIRE:
+  MESSAGES:
+    - "{{player}} was lit... too lit..."
+    - "{{player}} ate some really spicy food, causing them to set on fire and die"
+    - "{{player}} set themselves on fire and died LOL"
+
+FLY_INTO_WALL:
+  MESSAGES:
+    - "{{player}} tried to check if flying through solid matter was possible (it was not)"
+    - "{{player}} failed flight school"
+    - "{{player}}'s elytra malfunctioned, sending them into a wall"
+
+PROJECTILE:
+  WITHER:
+    MESSAGES:
+      - "{{player}} had several body parts blown off by a {{mob}}"
+      - "{{player}} ceased to exist after encountering a {{mob}}"
+      - "{{player}} withered away..."
+  GHAST:
+    MESSAGES:
+      - "{{player}} thought the {{mob}} was shooting out free candy"
+      - "{{player}} was given a free exploding fireball to the face"
+  SKELETON:
+    MESSAGES:
+      - "{{player}} was given free arrows by a {{mob}}"
+      - "{{player}} was on the recieving end of an arrow"
+  PLAYER:
+    MESSAGES:
+      - "{{player}} was shot to death by {{killer}} using {{item}}"
+  ARROW:
+    MESSAGES:
+      - "{{player}} took too many arrows to the knee"
+  MESSAGES:
+    - "{{player}} was shot to death by a {{mob}}"
+    - "{{player}} was shot through the heart by a {{mob}}"
+
+FALLING_BLOCK:
+  MESSAGES:
+    - "You forgot about physics, didn't you {{player}}?"
+    - "{{player}} was crushed to death by a freakin' {{block}} LOL"
+    - "(╯°□°)╯︵ ┻━┻ {{player}} was killed by a falling table"
+
+LAVA:
+  MESSAGES:
+    - "LOL some dork decided to jump into lava"
+    - "{{player}} became lava"
+    - "{{player}} decided to end their existence by jumping into lava"
+    - "{{player}} took on too much lava"
+    - "{{player}} was all nice and warm, sitting in their hot tub full of lava"
+
+ENTITY_ATTACK:
+  PLAYER:
+    MESSAGES:
+      - "{{player}} just got rekt by {{killer}}'s {{item}}"
+  BLAZE:
+    MESSAGES:
+      - "{{player}} was evaporated due to close contact with a blaze"
+  ZOMBIE:
+    MESSAGES:
+      - "{{player}} was eaten alive by a {{mob}}"
+      - "{{player}} had their face eaten off by a {{mob}}"
+      - "{{player}} became part of the walking dead"
+      - "A wild {{mob}} took a flesh sample from {{player}}"
+      - "{{player}} became friends with a {{mob}} (it did not end well)"
+  POLAR_BEAR:
+    MESSAGES:
+      - "{{player}} found out that polar bears are not teddy bears"
+  HUSK:
+    MESSAGES:
+      - "{{player}} was eaten alive by a {{mob}}"
+  DROWNED:
+    MESSAGES:
+      - "{{player}} was eaten alive by a {{mob}}"
+  WOLF:
+    MESSAGES:
+      - "{{player}} was torn to pieces by a {{mob}}"
+      - "{{player}} thought wolves were tamable by hitting them"
+
+DROWNING:
+  MESSAGES:
+    - "{{player}} forgot to freakin' breathe LOL"
+    - "{{player}} just drowned and died \ (•◡•) / "
+    - "{{player}} drank too much water"
+    - "{{player}} drank too much water"
+
+SUICIDE:
+  MESSAGES:
+    - "\ (•◡•) / {{player}} just killed themselves!"
+    - "{{player}} is no more"
+
+FALL:
+  MESSAGES:
+    - "{{player}} belly flopped into the ground"
+    - "{{player}} fought with gravity (and lost)"
+    - "{{player}} fell and died LOL"
+    - "{{player}} hit the floor at terminal velocity"
+    - "{{player}} turned into mush upon impact with the ground"
+    - "*Thud* was the sound {{player}} made when hitting the ground at mach 3"
+    - "{{player}} became aliven't"
+    - "{{player}} was turned off, but not on again"
+    - "Splat"
+    - "{{player}} fell over... like... from really high up..."
+    - "{{player}} bruised their knee after falling to their death"
+
+ENTITY_EXPLOSION:
+  PRIMED_TNT:
+    MESSAGES:
+      - "{{player}} got too comfortable with {{mob}}"
+  CREEPER:
+    MESSAGES:
+      - "Sssssomebody jusssst got blown up by a {{mob}}"
+      - "{{player}} decided that it was the perfect day to get blown up by a {{mob}}"
+      - "{{player}} thought it was valentines day and got blew to freakin' pieces by a {{mob}}"
+      - "{{player}} was caught hugging a {{mob}}"
+      - "Todays lesson comes in the form of {{player}} having their limbs blown off by a {{mob}}"
+      - "{{played}} was rapidly deconstructed into small parts by a {{mob}}"
+  MESSAGES:
+    - "{{player}} just got blown to pieces by {{mob}}"
+
+VOID:
+  MESSAGES:
+    - "{{player}} was ejected into the void"
+    - "{{player}} ventured too far into the unknown"
+    - "{{player}} passed the event horizon and entered a black hole"
+    - "void go brrr and sucked {{player}} in with it"
