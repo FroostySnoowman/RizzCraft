@@ -1,8 +1,5 @@
 package rizzcraft.net.rizzcraft;
 
-import org.bukkit.command.Command;
-import org.bukkit.command.CommandSender;
-import org.bukkit.entity.Player;
 import rizzcraft.net.rizzcraft.Death.DeathLogger;
 import rizzcraft.net.rizzcraft.Death.Messages;
 import rizzcraft.net.rizzcraft.OreAlert.OreAlert;

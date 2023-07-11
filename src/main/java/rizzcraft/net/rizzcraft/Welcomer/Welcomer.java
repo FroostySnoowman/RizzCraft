@@ -32,6 +32,7 @@ public class Welcomer {
         this.selectionOptions = new ArrayList();
         this.createSelectionItems();
         Objects.requireNonNull(this.main.getCommand("spawn")).setExecutor(new CommandManager(this));
+        Objects.requireNonNull(this.main.getCommand("ping")).setExecutor(new CommandManager(this));
 
         this.main.getServer().getPluginManager().registerEvents(new EventListener(this, this.main), this.main);
     }
@@ -82,13 +83,12 @@ public class Welcomer {
                             "Things just got better with you here!"
                     );
                     List<String> tips = Arrays.asList(
-                            "You can change your nickname color with /help nick",
-                            "You can hide yourself from the map with /dynmap hide",
-                            "You can create fully vanilla trading shops with /shop",
-                            "You can toggle /co i to see historical block changes",
-                            "Skipping the night only requires 20% of players to sleep",
+                            "You can hide yourself from the map with /dynmap hide!",
+                            "You can create fully vanilla trading shops with /shop!",
+                            "You can toggle /co i to see historical block changes!",
+                            "Skipping the night only requires 20% of players to sleep!",
                             "If a shop is within your claim, you may need to run /containertrust public to allow access!",
-                            "You can protect your base from griefers with /help claim"
+                            "You can protect your base from griefers with a wooden shovel!"
                     );
                     int rnd = new Random().nextInt(welcomer.size());
                     int rnd2 = new Random().nextInt(tips.size());

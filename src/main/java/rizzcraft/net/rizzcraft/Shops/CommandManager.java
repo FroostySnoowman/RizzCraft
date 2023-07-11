@@ -16,6 +16,11 @@ public class CommandManager implements CommandExecutor {
     }
 
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
+        if (!(sender instanceof Player)) {
+            sender.sendMessage(this.plugin.main.prefix + ChatColor.RED + "Only players can use this command!");
+            return true;
+        }
+
         if (label.equalsIgnoreCase("item") && sender instanceof Player player) {
             player.sendMessage(this.plugin.main.prefix + ChatColor.YELLOW + "You are holding: " + player.getInventory().getItemInMainHand().getType());
             return true;

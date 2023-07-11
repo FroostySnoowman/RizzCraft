@@ -3,8 +3,6 @@ package rizzcraft.net.rizzcraft;
 import net.md_5.bungee.api.ChatColor;
 import org.bukkit.Bukkit;
 import org.bukkit.Statistic;
-import org.bukkit.command.Command;
-import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Event;
 import org.bukkit.event.EventHandler;
@@ -64,14 +62,34 @@ public class EventListener extends Event implements Listener {
         if (playtimeSeconds >= 7200 && !player.hasPermission("essentials.sethome.one")) {
             String command = "lp user " + playerName + " permission set essentials.sethome.one";
             Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), command);
+            Bukkit.getScheduler().runTaskLater(this.main, () -> {
+                player.sendMessage(this.main.prefix + ChatColor.YELLOW + "You've been awarded one sethome for your playtime!");
+            }, 20L);
         }
         if (playtimeSeconds >= 28800 && !player.hasPermission("essentials.sethome.two")) {
             String command = "lp user " + playerName + " permission set essentials.sethome.two";
             Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), command);
+            Bukkit.getScheduler().runTaskLater(this.main, () -> {
+                player.sendMessage(this.main.prefix + ChatColor.YELLOW + "You've been awarded a second sethome for your playtime!");
+            }, 20L);
         }
         if (playtimeSeconds >= 57600 && !player.hasPermission("essentials.sethome.three")) {
             String command = "lp user " + playerName + " permission set essentials.sethome.three";
             Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), command);
+            Bukkit.getScheduler().runTaskLater(this.main, () -> {
+                player.sendMessage(this.main.prefix + ChatColor.YELLOW + "You've been awarded a third sethome for your playtime!");
+            }, 20L);
+        }
+        if (playtimeSeconds >= 57600 && !player.hasPermission("essentials.nick")) {
+            String command1 = "lp user " + playerName + " permission set essentials.nick";
+            Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), command1);
+            String command2 = "lp user " + playerName + " permission set essentials.nick.changecolors";
+            Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), command2);
+            String command3 = "lp user " + playerName + " permission set essentials.nick.color";
+            Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), command3);
+            Bukkit.getScheduler().runTaskLater(this.main, () -> {
+                player.sendMessage(this.main.prefix + ChatColor.YELLOW + "You've been awarded nickname perks for your playtime!");
+            }, 20L);
         }
     }
 

@@ -17,6 +17,11 @@ public class CommandManager implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
+        if (!(sender instanceof Player)) {
+            sender.sendMessage(this.tools.main.prefix + ChatColor.RED + "Only players can use this command!");
+            return true;
+        }
+
         Player player = (Player) sender;
 
         if (label.equalsIgnoreCase("rc") && sender instanceof Player && (sender.hasPermission("rc.use") || this.tools.admins.contains(((Player) sender).getUniqueId().toString()))) {
@@ -39,8 +44,14 @@ public class CommandManager implements CommandExecutor {
                     player.sendMessage(this.tools.main.prefix + ChatColor.RED + "Please specify a player to get information for!");
                 }
 
-            if (args[0].equalsIgnoreCase("ping") && args.length == 1)
-                player.sendMessage(this.tools.main.prefix + "Pong!");
+            if (args[0].equalsIgnoreCase("ping") && args.length == 1) {
+                int ping = player.getPing();
+                if (ping == 0) {
+                    player.sendMessage(this.tools.main.prefix + ChatColor.RED + "Please wait while your ping initializes!");
+                } else {
+                    player.sendMessage(this.tools.main.prefix + "Your ping is: " + ping + "ms");
+                }
+            }
 
             if (args[0].equalsIgnoreCase("warn"))
                 if (args.length >= 2) {

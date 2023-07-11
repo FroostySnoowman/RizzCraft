@@ -19,3 +19,6 @@ commands:
   spawn:
     description: Teleports you to spawn
     usage: /<command>
+  ping:
+    description: Shows you your ping
+    usage: /<command>
